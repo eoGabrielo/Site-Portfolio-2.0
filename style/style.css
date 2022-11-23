@@ -38,7 +38,7 @@ span{
 }
 
 .fundo {
-    background-color: var(--FundoTrasnparente);
+    background-color: rgba(0, 0, 0, 0.579);
     width: 100vw;
     padding-left: 5rem;
     overflow-y: hidden;

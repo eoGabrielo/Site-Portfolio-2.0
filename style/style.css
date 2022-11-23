@@ -44,7 +44,7 @@ span{
 }
 
 .fundo div {
-    width: 80%;
+    width: 500px;
 }
 
 .header h2 {
@@ -155,8 +155,8 @@ span{
         margin-top: 1rem;
     }
 
-    .botoes button {
-        font-size: .7rem;
+    .botoes a {
+        font-size: 1rem;
     }
 
 }

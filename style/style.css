@@ -1,0 +1,587 @@
+:root {
+    --CorTexto: white;
+    --FundoTrasnparente: rgba(0, 0, 0, 0.877);
+    --CorBotao: #004081;
+    --TamanhoTitulo: 2.5rem;
+    --CorTitulo: rgba(27, 27, 27, 0.945);
+    --EspacoEntreSections: 5rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    overflow-x: hidden;
+}
+
+span{
+    font-weight: 700;
+    color: #008cff;
+    font-size: 1rem;
+}
+
+.header {
+    width: 100vw;
+    background-image: url("https://th.bing.com/th/id/R.7c5eae3552a3ec6e4a5862ca8f55e217?rik=ObOu9%2fzNZ6lt2w&riu=http%3a%2f%2fgifimage.net%2fwp-content%2fuploads%2f2017%2f11%2fimagenes-gif-con-movimiento-de-tecnologia-9.gif&ehk=yaba5ms89RMfMVpz3kv2N3ZAk%2fmSo1Eqzj2e7hDYaHY%3d&risl=&pid=ImgRaw&r=0");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--CorTexto);
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.fundo {
+    background-color: var(--FundoTrasnparente);
+    width: 100vw;
+    padding-left: 5rem;
+    overflow-y: hidden;
+}
+
+.fundo div {
+    width: 80%;
+}
+
+.header h2 {
+    margin-top: 2rem;
+    transition: 0.5s;
+}
+
+.header h1 {
+    overflow-y: hidden;
+    margin-top: 1rem;
+    font-size: 5rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.header h1:hover {
+    transform: translateY(-15px);
+}
+
+.header p {
+    margin-top: 1rem;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.botoes a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    padding: .2rem 1rem;
+    border-radius: 2rem;
+    background-color: var(--CorBotao);
+    color: var(--CorTexto);
+    font-weight: 500;
+    transition: .4s;
+}
+
+.botoes a:hover {
+    background-color: var(--CorTexto);
+    color: var(--CorBotao);
+}
+
+.botoes a:active {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--CorTexto);
+}
+
+@media (max-width: 1000px) {
+
+    .botoes a {
+        font-size: 1.4rem;
+
+    }
+
+    .fundo {
+        padding: 2rem;
+    }
+
+    .fundo div {
+        width: 95%;
+    }
+
+    .header h2 {
+        margin-top: 5rem;
+    }
+
+    .header h1 {
+        margin-top: 2rem;
+        font-size: 3rem;
+        font-weight: 600;
+        transition: 0.5s;
+        line-height: 3.2rem;
+    }
+
+    .header p {
+        margin-top: 2rem;
+        font-weight: 400;
+        font-size: .9rem;
+    }
+
+    .botoes button {
+        font-size: .9rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .fundo {
+        padding: 1.2rem;
+    }
+
+    .header h1 {
+        margin-top: 1rem;
+    }
+
+    .header p {
+        font-size: .8rem;
+        margin-top: 1rem;
+    }
+
+    .botoes button {
+        font-size: .7rem;
+    }
+
+}
+
+/* Tecnologias */
+
+main {
+    width: 100vw;
+}
+
+.main {
+    margin-top: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainTexto {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.mainTexto h1 {
+    font-size: var(--TamanhoTitulo);
+    color: var(--CorTitulo);
+    font-weight: 600;
+}
+
+.mainTexto p {
+    font-size: 1rem;
+    color: black;
+    font-weight: 300;
+}
+
+.divTecnologias {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 2rem;
+}
+
+.divTecnologias div {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.divTecnologias div:hover {
+    transform: translateY(-10px);
+    border-bottom: 1px solid black;
+}
+
+.divTecnologias div:hover p {
+    font-weight: 800;
+}
+
+
+.divTecnologias div p {
+    font-size: 80%;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    transition: .5s;
+}
+
+.divTecnologias div img {
+    width: 100%;
+}
+
+@media (max-width: 470px) {
+
+    .mainTexto h1 {
+        font-size: 2rem;
+
+    }
+
+    .mainTexto p {
+        font-size: 1rem;
+
+    }
+
+
+    .divTecnologias div {
+        width: 100px;
+    }
+
+
+}
+
+/* Sobre min */
+
+.divSobreMin {
+    width: 100vw;
+    background-image: url("https://image.freepik.com/foto-gratis/particulas-polvo-azul-retroiluminacion-real-destello-lente-real_5841-103.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fundoSobremin {
+    background-color: var(--FundoTrasnparente);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.paragrafoSobre{
+    max-width: 900px;
+}
+
+.fundoSobremin div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 90%;
+    gap: 1rem;
+}
+
+.fundoSobremin h1 {
+    color: white;
+    font-size: var(--TamanhoTitulo);
+    font-weight: 500;
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+.fundoSobremin p {
+    overflow-y: auto;
+    color: white;
+    font-size: 1rem;
+}
+
+.gentileza {
+    font-weight: 100;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+
+}
+
+@media (max-width: 470px) {
+    .fundoSobremin p {
+        font-size: .8rem;
+    }
+
+
+}
+
+/* Projetos */
+
+.divProjetos {
+    margin-top: var(--EspacoEntreSections);
+    width: 100vw;
+    max-width: 1100px;
+    margin: var(--EspacoEntreSections) auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.divProjetosCard {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.divProjetosCard figure {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .1rem;
+    border: none;
+
+}
+
+.divProjetosCard figure img {
+    width: 100%;
+
+}
+
+.divProjetosCard figure a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .5s;
+    height: 50px;
+    background-color: var(--CorBotao);
+    color: var(--CorTexto);
+}
+
+.divProjetosCard figure a:hover {
+    background-color: var(--CorTitulo);
+}
+
+.divProjetosCard figure a:active {
+    background-color: rgba(255, 235, 205, 0);
+    color: var(--CorBotao);
+}
+
+.divTextoProjeto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.divTextoProjeto p {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--CorTitulo)
+}
+
+@media (max-width: 1027px) {
+
+    .divTextoProjeto p {
+        font-size: 50px;
+        position: absolute;
+        left: 0;
+    
+    }
+
+    .divTextoProjeto {
+        position: relative;
+    }
+    
+
+    
+
+    .divTecnologias div {
+        width: 200px;
+    }
+    
+    
+}
+
+.projeto400px {
+    width: 100%;
+    font-weight: 600;
+    display: none;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+
+    .projeto400px{
+        display: block;
+        color: var(--CorTitulo);
+        font-size: 2.5rem
+    }
+
+    .divTextoProjeto {
+        display: none;
+    }
+
+
+    .divProjetosCard {
+        width: 100%;
+    }
+
+    .divProjetosCard figure {
+        width: 80%;
+    }
+
+}
+
+/* Certificados */
+
+
+.divCertificado{
+    background-image: url("../img/fundoCertificado.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundoCertificado{
+    background-color: rgba(0, 0, 0, 0.863);
+    width: 100%;
+    height: 100%;
+    padding: 4rem 2rem;
+}
+
+.divCertificado h1{
+    font-size: var(--TamanhoTitulo);
+    color: var(--CorTexto);
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.divCertificado p{
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--CorTexto);
+}
+
+
+.divCertificado figure{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+
+}
+
+
+.divCertificado figure div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 140px;
+
+}
+
+
+.divCertificado figure img{
+    width: 100%;
+
+}
+
+.divCertificado figure a{
+    text-decoration: none;
+    background-color: #Ffd700;
+    color: var(--CorTitulo);
+    padding: 0.1rem 1rem;
+    font-size: .9rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    transition: 0.5s;
+
+}
+
+.divCertificado figure a:hover{
+    background-color: #ffd90000;
+    color: #Ffd700;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.divCertificado figure a:active{
+    background-color:#DD3400;
+    color: #Ffd700;
+}
+
+/* Rodapé */
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+footer p, a{
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--CorTitulo);
+    font-size: .8rem;
+}
+
+.rodapeInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 1.2rem;
+}
+
+strong{
+    font-weight: 500;
+}
+
+
+footer a:hover{
+    background-color: var(--CorTitulo);
+    color: white;
+    font-weight: 500;
+    padding: 0.2rem 0.9rem;
+    border-radius: 2rem;
+}
+

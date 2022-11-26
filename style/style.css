@@ -495,7 +495,7 @@ main {
     background-color: rgba(0, 0, 0, 0.863);
     width: 100%;
     height: 100%;
-    padding: 4rem 2rem;
+    padding: 4rem 0.5rem;
 }
 
 .divCertificado h1{
@@ -505,7 +505,6 @@ main {
     text-align: center;
 }
 
-
 .divCertificado p{
     font-size: 1rem;
     text-align: center;
@@ -513,6 +512,34 @@ main {
     color: var(--CorTexto);
 }
 
+@media (max-width: 315px) {
+    .divCertificado h1{
+        font-size: 1.8rem
+    }    
+    
+    .divCertificado p{
+        font-size: .8rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        color: var(--CorTexto);
+    }
+
+    .projeto400px{
+        display: block;
+        color: var(--CorTitulo);
+        font-size: 1.5rem
+    }
+
+    .mainTexto h1 {
+        font-size: 1.8rem
+    }
+
+    .mainTexto p {
+        font-size: 0.7rem;
+        color: black;
+        font-weight: 300;
+    }
+}
 
 .divCertificado figure{
     display: flex;
